@@ -1,6 +1,7 @@
 {
   "name": "next-app-directory-playground",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "prepare": "husky install",
@@ -8,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write 'app/**/*.(js|jsx|ts|tsx)'"
+    "format": "prettier --write '(app|pages|components)/**/*.(js|jsx|ts|tsx)'"
   },
   "dependencies": {
     "@types/node": "18.15.11",
