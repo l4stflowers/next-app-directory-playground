@@ -12,7 +12,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header className="flex w-full bg-inherit sm:sticky sm:top-0 sm:z-10">
+          <div className="container mx-auto flex h-[80px] items-center px-4">
+            <p className="text-2xl font-bold underline">
+              App Directory Playground
+            </p>
+          </div>
+        </header>
+        <main className="w-full">{children}</main>
+        <div className="flex h-[60px] items-center justify-center">
+          <small>&copy; 2023 koshiro baba</small>
+        </div>
+      </body>
     </html>
   )
 }
