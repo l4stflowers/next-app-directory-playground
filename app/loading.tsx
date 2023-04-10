@@ -1,4 +1,4 @@
-export default function Loading() {
+const Loading = (): JSX.Element => {
   return (
     <div className="container mx-auto px-4">
       <div className="mt-2 flex justify-center">
@@ -7,3 +7,5 @@ export default function Loading() {
     </div>
   )
 }
+
+export default Loading
