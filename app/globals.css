@@ -5,10 +5,10 @@
 @layer base {
   html,
   body {
-    @apply max-w-full
+    @apply max-w-full;
   }
 
   body {
-    @apply text-black bg-white dark:text-white dark:bg-black
+    @apply bg-white text-black dark:bg-black dark:text-white;
   }
 }

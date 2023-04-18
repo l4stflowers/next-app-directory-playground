@@ -8,8 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write '(app|pages|components)/**/*.(js|jsx|ts|tsx)'"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --max-warnings 0 --cache .",
+    "format": "prettier --check ."
   },
   "dependencies": {
     "@types/node": "18.15.11",
