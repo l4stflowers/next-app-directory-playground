@@ -1,4 +1,3 @@
-const path = require('path')
 const { ESLint } = require('eslint')
 
 const removeIgnoredFiles = async (files) => {
