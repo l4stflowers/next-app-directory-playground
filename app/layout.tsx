@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 
 export const metadata = {
@@ -14,16 +15,24 @@ const RootLayout = ({
     <html lang="en">
       <body>
         <header className="flex w-full bg-inherit sm:sticky sm:top-0 sm:z-10">
-          <div className="container mx-auto flex h-[80px] items-center px-4">
-            <p className="text-2xl font-bold underline">
-              App Directory Playground
-            </p>
+          <div className="container mx-auto flex min-h-[80px] flex-wrap items-center justify-between gap-4 p-4">
+            <Link href="/">
+              <p className="whitespace-nowrap text-2xl font-bold underline">
+                App Router Hands-on
+              </p>
+            </Link>
+            <nav className="flex flex-wrap items-center gap-x-4 gap-y-1">
+              <Link href="/static">Static</Link>
+              <Link href="/dynamic">Dynamic</Link>
+              {/*
+              <Link href="/client-component" prefetch={false}>
+                ClientComponent
+              </Link>
+              */}
+            </nav>
           </div>
         </header>
         <main className="w-full">{children}</main>
-        <div className="flex h-[60px] items-center justify-center">
-          <small>&copy; 2023 koshiro baba</small>
-        </div>
       </body>
     </html>
   )

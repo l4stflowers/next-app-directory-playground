@@ -15,5 +15,4 @@ const buildESLintCommand = async (files) => {
 
 module.exports = {
   '*.{js,jsx,ts,tsx}': [buildESLintCommand, 'prettier --write'],
-  '*.{css,scss,html,json,md,yaml}': ['prettier --write'],
 }

@@ -12,6 +12,11 @@
     "format": "prettier --check ."
   },
   "dependencies": {
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
@@ -23,12 +28,9 @@
     "eslint-plugin-functional": "^5.0.7",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
-    "next": "13.2.4",
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.7",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "tailwindcss": "^3.3.1",
     "typescript": "5.0.3"
   }
